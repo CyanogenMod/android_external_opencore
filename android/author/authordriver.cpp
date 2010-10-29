@@ -607,8 +607,8 @@ void AuthorDriver::handleSetVideoEncoder(set_video_encoder_command *ac)
         clipVideoFrameRate();
 
         if( mVideoWidth == 1280 && mVideoHeight == 720 ){
-          LOGV("Setting fps to 24 for 720p recording on 8k");
-          mVideoFrameRate = 24;
+          LOGV("Setting fps to 30 for 720p recording on 8k");
+          mVideoFrameRate = 30;
         }
         ((AndroidCameraInput *)mVideoInputMIO)->SetFrameRate(mVideoFrameRate);
 
